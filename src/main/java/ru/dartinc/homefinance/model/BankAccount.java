@@ -16,7 +16,7 @@ public class BankAccount {
     private String name;
     private String faceAccount;
     private BigDecimal amount;
-
+    private String someField;
 
 
 }
