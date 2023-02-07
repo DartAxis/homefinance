@@ -6,5 +6,4 @@ public class CreditCard extends BankCard {
 
     private BigDecimal kreditLimit;
 
-
 }
