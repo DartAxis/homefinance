@@ -1,25 +1,32 @@
 package ru.dartinc.homefinance.model;
 
 
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "account")
-@Data
+@Table(name = "accounts")
 @NoArgsConstructor
+@Getter
+@Setter
 public class Account {
-
     @Id
-    private Long id;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "account_name")
+    private Long accountId;
+    @Column(name = "name")
     private String name;
-
+    @Column(name = "amount")
     private BigDecimal amount;
+    @Column(name = "creditlimit")
+    private BigDecimal creditLimit;
+    @Column(name = "number")
+    private String number;
+    @Column(name = "description")
+    private String description;
 
 }

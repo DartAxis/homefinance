@@ -1,0 +1,15 @@
+package ru.dartinc.homefinance.model;
+
+public enum Expenditure {
+    HEALTH_AND_BEAUTY,
+    EDUCATION,
+    ENTERTAINMENT,
+    TOURISM_AND_TRAVEL,
+    PRODUCTS_AND_HOUSEHOLD,
+    GOODS_RENT,
+    INTERNET_AND_COMMUNICATION,
+    RENTAL_HOUSING,
+    EMERGENCY,
+    REPAIR_CLOTHING_GOODS,
+    DIGITAL_PURCHASES
+}
